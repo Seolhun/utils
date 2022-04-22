@@ -1,0 +1,42 @@
+{
+  "name": "aggregation",
+  "version": "1.0.0",
+  "description": "To aggregate data for statistics",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+		"lint": "eslint \"{src,test}/**/*.{ts,tsx}\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seolhun/aggregation.git"
+  },
+	"publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "aggregate",
+    "statistics"
+  ],
+
+  "author": "Seolhun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Seolhun/aggregation/issues"
+  },
+  "homepage": "https://github.com/Seolhun/aggregation#readme",
+  "dependencies": {
+    "fp-ts": "^2.12.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.13.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^27.5.1"
+  }
+}
