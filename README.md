@@ -6,9 +6,9 @@
 - Value
   - getValue
   - getNestedValue
+  - typeCasting
 - Math
   - ...
-- TypeCasting
 - Formatter
 
 ## Requirements
