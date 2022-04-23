@@ -29,5 +29,6 @@ export const median = (values: number[]) => {
   )
   const size = values.length
   const m = pipe(size, divide)(2)
-  return pipe(size, remainder)(2) === 1 ? sorted[m | 0] : (sorted[m - 1] + sorted[m]) / 2
+  const isOddSize = pipe(size, remainder)(2) === 1
+  return isOddSize ? sorted[m | 0] : (sorted[m - 1] + sorted[m]) / 2
 }
