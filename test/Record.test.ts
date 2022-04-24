@@ -2,7 +2,7 @@ import * as Record from 'fp-ts/Record'
 import { Magma } from 'fp-ts/Magma'
 import { option, either } from 'fp-ts'
 
-describe('Map', () => {
+describe('Record', () => {
   it('compact', () => {
     const expected = Record.compact({
       a: option.some('foo'),
@@ -58,5 +58,11 @@ describe('Map', () => {
       a: '12',
       b: '123'
     })
+  })
+
+  it('map', () => {
+    const f = (a: number) => `-${a}-`
+    const expected = Record.map(f)({ a: 3, b: 5 })
+    expect(expected).toEqual({ a: '-3-', b: '-5-' })
   })
 })

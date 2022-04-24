@@ -8,6 +8,7 @@ export const divide = (a: number) => (b: number) => a / b
 export const remainder = (a: number) => (b: number) => a % b
 export const squared = (a: number) => (b: number) => a ** b
 export const sum = (a: number) => reduce<number, number>(a, (acc, val) => acc + val)
+
 export const average = (values: number[]) => {
   if (isEmpty(values)) {
     return 0
@@ -28,7 +29,7 @@ export const median = (values: number[]) => {
     sort(Ord)
   )
   const size = values.length
-  const m = pipe(size, divide)(2)
+  const midIndex = pipe(size, divide)(2)
   const isOddSize = pipe(size, remainder)(2) === 1
-  return isOddSize ? sorted[m | 0] : (sorted[m - 1] + sorted[m]) / 2
+  return isOddSize ? sorted[midIndex | 0] : (sorted[midIndex - 1] + sorted[midIndex]) / 2
 }
