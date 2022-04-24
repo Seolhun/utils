@@ -2,7 +2,7 @@ module.exports = {
   preset: 'ts-jest',
   globals: {
     'ts-jest': {
-      tsconfig: 'tsconfig.json'
+      tsconfig: 'tsconfig.test.json'
     }
   },
   testPathIgnorePatterns: ['/node_modules/'],
