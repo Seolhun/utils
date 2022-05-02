@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/Seolhun/aggregation#readme",
   "dependencies": {
-    "fp-ts": "^2.12.0",
+    "fp-ts": "^2.12.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
