@@ -1,34 +1,33 @@
 {
-  "name": "aggregation",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "To aggregate data for statistics",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint \"{src,test}/**/*.{ts,tsx}\"",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Seolhun/aggregation.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "aggregate",
     "statistics"
   ],
   "author": "Seolhun",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seolhun/utils.git"
+  },
   "bugs": {
-    "url": "https://github.com/Seolhun/aggregation/issues"
+    "url": "https://github.com/Seolhun/utils/issues"
   },
-  "homepage": "https://github.com/Seolhun/aggregation#readme",
-  "dependencies": {
-    "fp-ts": "^2.12.0",
-    "lodash": "^4.17.21"
+  "publishConfig": {
+    "access": "public"
   },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "deploy": "npm run deploy --workspaces",
+		"test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "lint:fix": "npm run lint:fix --workspaces",
+    "prettier": "npm run prettier --workspaces",
+    "prettier:fix": "npm run prettier:fix --workspaces"
+  },
+  "homepage": "https://github.com/Seolhun/utils#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.182",
@@ -41,5 +40,9 @@
     "eslint-plugin-promise": "^6.0.0",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4"
-  }
+  },
+  "workspaces": [
+    "packages/aggregations",
+		"packages/data-structures"
+  ]
 }

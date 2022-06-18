@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "name": "cache",
+  "license": "MIT",
+	"description": "To store key value data",
+  "keywords": [
+    "aggregate",
+    "statistics"
+  ],
+  "author": "Seolhun",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seolhun/utils.git"
+  },
+  "homepage": "https://github.com/Seolhun/utils#readme",
+  "bugs": {
+    "url": "https://github.com/Seolhun/utils/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+	"files": [
+    "dist/**",
+    "esm/**"
+  ],
+  "scripts": {
+		"build": "npm run build:cjs && npm run build:esm",
+		"build:cjs": "tsc",
+    "build:esm": "tsc --target ESNext --module ES6 --outDir esm",
+    "deploy": "npm publish",
+		"test": "jest",
+    "lint": "eslint '**/*.{js,ts,tsx}'",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier '**/*.{json,yaml,md}' --check",
+    "prettier:fix": "prettier '**/*.{json,yaml,md}' --write"
+  },
+  "dependencies": {
+  }
+}

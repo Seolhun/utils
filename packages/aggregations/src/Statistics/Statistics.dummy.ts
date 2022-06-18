@@ -21,7 +21,7 @@ export const items = (count: number) => {
   return Array.from(Array(count)).map<Item>((_, i) => ({
     _id: `${i}`,
     pk: '2022_04_21__coupang',
-    uk: `${Math.floor(Math.random() * 20)}`,
+    uk: `${Math.floor(Math.random() * 5)}`,
     attrs: {
       category: '국내산 소고기'
     },

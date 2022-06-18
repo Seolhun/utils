@@ -1,16 +1,13 @@
-# Aggregation
+# How to
 
-- Field
-  - hasProperty
-  - hasNestedProperty
-- Value
-  - getValue
-  - getNestedValue
-  - typeCasting
-- Math
-  - ...
-- Formatter
+## Init packages
 
-## Requirements
+```bash
+npm init -w ./packages/package
+```
 
-- fp-ts
+## Install packages
+
+```bash
+npm install react -w package
+```
