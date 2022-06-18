@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
-  "name": "cache",
+  "version": "1.0.1",
+  "name": "@seolhun/cache",
   "license": "MIT",
-	"description": "To store key value data",
+  "description": "To store key value data",
   "keywords": [
     "aggregate",
     "statistics"
@@ -21,21 +21,21 @@
   },
   "main": "dist/index.js",
   "module": "esm/index.js",
-	"files": [
+  "files": [
     "dist/**",
     "esm/**"
   ],
   "scripts": {
-		"build": "npm run build:cjs && npm run build:esm",
-		"build:cjs": "tsc",
+    "prebuild": "rm -rf dist && rm -rf esm",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc",
     "build:esm": "tsc --target ESNext --module ES6 --outDir esm",
     "deploy": "npm publish",
-		"test": "jest",
+    "test": "jest",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier '**/*.{json,yaml,md}' --check",
     "prettier:fix": "prettier '**/*.{json,yaml,md}' --write"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

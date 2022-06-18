@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "To aggregate data for statistics",
   "keywords": [
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "deploy": "npm run deploy --workspaces",
-		"test": "npm run test --workspaces",
+    "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
     "lint:fix": "npm run lint:fix --workspaces",
     "prettier": "npm run prettier --workspaces",
@@ -43,6 +43,7 @@
   },
   "workspaces": [
     "packages/aggregations",
-		"packages/data-structures"
+		"packages/cache",
+    "packages/data-structures"
   ]
 }
