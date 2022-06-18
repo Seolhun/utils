@@ -1,8 +1,8 @@
 # Data-structures
 
-- Tree
-- Cache
+-   Tree
+-   Cache
 
 ## Requirements
 
-- Immutable
+-   Immutable

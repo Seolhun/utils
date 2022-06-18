@@ -5,7 +5,8 @@ module.exports = {
     jest: true
   },
   extends: [
-    'standard'
+    'standard',
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
